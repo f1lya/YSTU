@@ -1,0 +1,79 @@
+$primary_orange: #EF7F1A;
+$primary_blue: #13447E;
+$secondary_blue: #1B6DD3;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 2px rgba($secondary_blue, 0.2);
+}
+
+form > * {
+  margin-bottom: 20px;
+}
+
+.header {
+  font-size: 2.4em;
+  font-weight: 600;
+  color: $primary_blue;
+}
+
+.select, input {
+  width: 300px;
+  color: $secondary_blue;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.select input {
+  width: 140px;
+  height: 40px;
+  font-size: 1em;
+}
+
+.select .active {
+  box-shadow: 0 0 5px 2px rgba($primary_orange, 0.25) inset;
+  color: $primary_orange;
+}
+
+.login {
+  width: 160px;
+  height: 40px;
+  box-shadow: 0 0 5px 2px rgba($primary_orange, 0.25);
+  color: $primary_orange;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9em;
+  color: #1b6dd3;
+}
+
+.info a {
+  color: $primary_orange;
+}
+
+input {
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+  box-shadow: 0 0 5px 2px rgba(#1B6DD3, 0.2);
+  height: 40px;
+}
